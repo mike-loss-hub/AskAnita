@@ -80,7 +80,7 @@ def main():
 
         enafocus = st.radio(
             "ENA Focus",
-            ("Position Statements"),#, "HR"),
+            ("Position Statements", "Website"),#, "HR"),
             index=0,
             help="Select the ENA focus area",
             key="enafocus",
@@ -110,6 +110,10 @@ def main():
         chat_input_prompt = "Ask me anything about ENA's HR Documents!"
         st.session_state["kb_id"] = st.secrets["knowledge_base_hr_id"]
         st.session_state["mode"] = "human resources documents"
+    elif enafocus == "Website":
+        chat_input_prompt = "Ask me anything about ENA's Website!"
+        st.session_state["kb_id"] = st.secrets["knowledge_base_website_id"]
+        st.session_state["mode"] = "ENA's Website"
 
     if llm_model == "Claude":
         st.session_state["model_id"] = st.secrets["model_id_2"]
