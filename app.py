@@ -80,7 +80,8 @@ def main():
 
         enafocus = st.radio(
             "ENA Focus",
-            ("Position Statements", "Website"),#, "HR"),
+            ("Website"),
+            #("Position Statements", "Website"),#, "HR"),
             index=0,
             help="Select the ENA focus area",
             key="enafocus",
