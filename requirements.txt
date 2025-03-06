@@ -11,3 +11,5 @@ opensearch-py==2.4.2
 requests==2.31.0
 requests-aws4auth==1.2.3
 PyPDF2==3.0.1
+langdetect==1.0.9
+toml==0.10.2
